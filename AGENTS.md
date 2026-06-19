@@ -15,15 +15,13 @@ Patch Radar exists to reduce maintainer burden in the AI-assisted contribution e
 
 ## Current product scope
 
-Default MVP commands:
+Current v0.1 command:
 
 ```bash
 patch-radar scan owner/repo
-patch-radar issue owner/repo 347
-patch-radar show owner/repo --candidate <candidate-id>
 ```
 
-MVP should focus on read-only discovery:
+Current v0.1 should focus on read-only discovery:
 
 - List forks and branches that are ahead of upstream.
 - Find recent candidate patch branches.
@@ -31,6 +29,13 @@ MVP should focus on read-only discovery:
 - Detect whether tests were added or changed.
 - Detect obvious risk signals such as dependency, CI, install script, auth, crypto, generated, binary, or very large changes.
 - Produce human-readable output and stable machine-readable JSON output.
+
+Planned follow-up commands:
+
+```bash
+patch-radar issue owner/repo 347
+patch-radar show owner/repo --candidate <candidate-id>
+```
 
 Out of scope unless explicitly requested by the project owner:
 
