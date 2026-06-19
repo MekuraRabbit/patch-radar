@@ -20,7 +20,11 @@ The `scan` command uses GitHub API metadata, branch refs, compare data, and diff
 
 ## Installation
 
+Patch Radar is not published to npm yet. Install it from source for now:
+
 ```bash
+git clone https://github.com/MekuraRabbit/patch-radar.git
+cd patch-radar
 npm install
 npm run build
 npm link
